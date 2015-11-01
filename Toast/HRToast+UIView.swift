@@ -112,7 +112,9 @@ extension UIView {
             let tapRecognizer = UITapGestureRecognizer(target: toast, action: Selector("handleToastTapped:"))
             toast.addGestureRecognizer(tapRecognizer)
             toast.userInteractionEnabled = true;
+            #if os(iOS)
             toast.exclusiveTouch = true;
+            #endif
         }
         
         self.addSubview(toast)
