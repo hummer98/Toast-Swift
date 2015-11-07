@@ -63,7 +63,7 @@ let HRToastDisplayShadow    =   true
 
 //HRToast (UIView + Toast using Swift)
 
-extension UIView {
+public extension UIView {
     
     /*
     *  public methods
